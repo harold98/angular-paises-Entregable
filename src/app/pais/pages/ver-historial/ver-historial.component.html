@@ -1,0 +1,26 @@
+<div class="animate__animated animate__fadeIn animate__faster">
+   
+    <h2 class="text-primary">Paises consultados</h2>
+    <hr>
+
+    <table class="table">
+        <thead>
+            <tr class="text-primary">
+                <th>nombre</th>
+                <th>capital</th>
+                <th>fecha</th>
+                <th>opciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let itempais of historialtemp">
+                <td>{{itempais.name}}</td>
+                <td>{{itempais.capital}}</td>
+                <td>{{itempais.horabusqueda | date:"medium"}}</td>
+                <td><a [routerLink]="['/pais', itempais.alpha2Code]">Ver...</a></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+

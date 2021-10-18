@@ -1,0 +1,13 @@
+html,body {
+     margin-top: 20px;
+       background-color: #F4F5C4;
+  }
+
+.small-flag {
+    width: 50px;
+}
+
+.mr-1 {
+    margin-right: 5px;
+}
+
